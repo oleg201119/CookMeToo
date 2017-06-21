@@ -1,0 +1,44 @@
+// Color theme
+$red-1-color: #CC0017;
+$red-2-color: #FF1933;
+$red-3-color: #7F000E;
+
+$green-1-color: #00CC2D;
+$green-2-color: #2CD050;
+$green-3-color: #007F1C;
+
+$black-1-color: #000000;
+$black-2-color: #505050;
+$black-3-color: #ACACAC;
+
+$yellow-1-color: #FFBE19;
+$yellow-2-color: #FFCB46;
+$yellow-3-color: #FFD670;
+
+$orange-1-color: #FF5519;
+$orange-2-color: #FF7546;
+$orange-3-color: #FF9570;
+
+$red-1-active-color:              darken($red-1-color, 10%) !default;
+$red-2-active-color:              darken($red-2-color, 10%) !default;
+$red-3-active-color:              darken($red-3-color, 10%) !default;
+
+$green-1-active-color:            darken($green-1-color, 10%) !default;
+$green-2-active-color:            darken($green-2-color, 10%) !default;
+$green-3-active-color:            darken($green-3-color, 10%) !default;
+
+$black-1-active-color:            darken($black-1-color, 10%) !default;
+$black-2-active-color:            darken($black-2-color, 10%) !default;
+$black-3-active-color:            darken($black-3-color, 10%) !default;
+
+$yellow-1-active-color:           darken($yellow-1-color, 10%) !default;
+$yellow-2-active-color:           darken($yellow-2-color, 10%) !default;
+$yellow-3-active-color:           darken($yellow-3-color, 10%) !default;
+
+$orange-1-active-color:           darken($orange-1-color, 10%) !default;
+$orange-2-active-color:           darken($orange-2-color, 10%) !default;
+$orange-3-active-color:           darken($orange-3-color, 10%) !default;
+
+// Override the variables
+$balanced: $green-1-color;
+$assertive: $red-1-color;

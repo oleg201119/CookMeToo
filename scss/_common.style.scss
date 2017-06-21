@@ -1,0 +1,14 @@
+.button {
+  border: none !important;
+  border-color: transparent !important;
+  border-radius: 0px;
+
+  &.activeted {
+    border: none !important;
+    border-color: transparent !important;
+  }
+}
+
+.border-black2 {
+  border-color: $black-2-color;
+}
