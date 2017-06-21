@@ -37,7 +37,7 @@
 
       .item {
         border-color: $black-2-color;
-        margin: 10px 0px;
+        margin: 0px 0px 10px 0px;
       }
 
       .small-right-link-wrapper {
@@ -54,7 +54,7 @@
         }
       }
 
-      .register-wrapper {
+      .another-wrapper {
         position: absolute;
         width: 100%;
         bottom: 40px;
@@ -63,7 +63,7 @@
 
         text-align: center;
 
-        .register-link {
+        .another-link {
           text-decoration: none;
           color: $green-3-color;
 

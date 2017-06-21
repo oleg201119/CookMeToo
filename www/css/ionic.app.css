@@ -9898,7 +9898,7 @@ a.button {
     text-align: center; }
   .auth-view .bottom-content .form .item {
     border-color: #505050;
-    margin: 10px 0px; }
+    margin: 0px 0px 10px 0px; }
   .auth-view .bottom-content .form .small-right-link-wrapper {
     text-align: right; }
   .auth-view .bottom-content .form .button-wrapper {
@@ -9907,15 +9907,15 @@ a.button {
     bottom: 80px; }
     .auth-view .bottom-content .form .button-wrapper .button {
       width: 100%; }
-  .auth-view .bottom-content .form .register-wrapper {
+  .auth-view .bottom-content .form .another-wrapper {
     position: absolute;
     width: 100%;
     bottom: 40px;
     font-size: 12px;
     line-height: 26px;
     text-align: center; }
-    .auth-view .bottom-content .form .register-wrapper .register-link {
+    .auth-view .bottom-content .form .another-wrapper .another-link {
       text-decoration: none;
       color: #007F1C; }
-      .auth-view .bottom-content .form .register-wrapper .register-link.activated {
+      .auth-view .bottom-content .form .another-wrapper .another-link.activated {
         opacity: 0.3; }
