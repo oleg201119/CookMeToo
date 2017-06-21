@@ -31,5 +31,5 @@ angular.module('foodapp.route', [])
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/forgot');
+  $urlRouterProvider.otherwise('/welcome');
 });

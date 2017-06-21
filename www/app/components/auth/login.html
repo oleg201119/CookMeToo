@@ -1,4 +1,4 @@
-<ion-view class="login-view">
+<ion-view class="auth-view login">
   <ion-content scroll="false">
     <div class="main-content">
       <div class="top-content">
@@ -14,21 +14,20 @@
             <label class="item item-input">
               <input type="password" placeholder="password" ng-model="formdata.password">
             </label>
-            <div class="forgot-wrapper">
-              <a href="#" class="button button-small button-clear button-dark">Forgot Password?</a>
+
+            <div class="small-right-link-wrapper">
+              <a href="#/forgot" class="button button-small button-clear button-dark">Forgot Password?</a>
             </div>
 
-            <div class="login-wrapper">
+            <div class="button-wrapper">
               <button class="button button-assertive">LOGIN</button>
             </div>
             <div class="register-wrapper">
               <span>Don't have an account yet? - <a href="#" class="register-link">Register now!</a></span>
             </div>
-
           </form>
         </div>
       </div>
     </div>
-
   </ion-content>
 </ion-view>

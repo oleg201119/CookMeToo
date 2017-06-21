@@ -9871,53 +9871,51 @@ a.button {
         width: 100%;
         left: 0px; }
 
-.login-view .main-content {
+.auth-view .main-content {
   width: 100%;
   height: 100%;
   padding: 0px 40px; }
 
-.login-view .top-content {
+.auth-view .top-content {
   position: relative;
   width: 100%;
   height: 42%;
   text-align: center; }
-  .login-view .top-content .vertical-helper {
+  .auth-view .top-content .vertical-helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  .login-view .top-content img.logo {
+  .auth-view .top-content img.logo {
     width: auto;
     max-height: 172px;
     vertical-align: middle; }
 
-.login-view .bottom-content {
+.auth-view .bottom-content {
   position: relative;
   width: 100%;
   height: 58%; }
-
-.login-view .form .item {
-  border-color: #505050;
-  margin: 10px 0px; }
-
-.login-view .form .forgot-wrapper {
-  text-align: right; }
-
-.login-view .form .login-wrapper {
-  position: absolute;
-  width: 100%;
-  bottom: 80px; }
-  .login-view .form .login-wrapper .button {
-    width: 100%; }
-
-.login-view .form .register-wrapper {
-  position: absolute;
-  width: 100%;
-  bottom: 40px;
-  font-size: 12px;
-  line-height: 26px;
-  text-align: center; }
-  .login-view .form .register-wrapper .register-link {
-    text-decoration: none;
-    color: #007F1C; }
-    .login-view .form .register-wrapper .register-link.activated {
-      opacity: 0.3; }
+  .auth-view .bottom-content .form .description {
+    text-align: center; }
+  .auth-view .bottom-content .form .item {
+    border-color: #505050;
+    margin: 10px 0px; }
+  .auth-view .bottom-content .form .small-right-link-wrapper {
+    text-align: right; }
+  .auth-view .bottom-content .form .button-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 80px; }
+    .auth-view .bottom-content .form .button-wrapper .button {
+      width: 100%; }
+  .auth-view .bottom-content .form .register-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center; }
+    .auth-view .bottom-content .form .register-wrapper .register-link {
+      text-decoration: none;
+      color: #007F1C; }
+      .auth-view .bottom-content .form .register-wrapper .register-link.activated {
+        opacity: 0.3; }

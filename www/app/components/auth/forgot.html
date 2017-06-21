@@ -1,4 +1,4 @@
-<ion-view class="forgot-view">
+<ion-view class="auth-view forgot">
   <ion-content scroll="false">
     <div class="main-content">
       <div class="top-content">
@@ -8,27 +8,24 @@
       <div class="bottom-content">
         <div class="form">
           <form>
+            <p class="description">Please enter your email, and you'll receive a link to reset your password</p>
             <label class="item item-input">
               <input type="text" placeholder="email" ng-model="formdata.email">
             </label>
-            <label class="item item-input">
-              <input type="password" placeholder="password" ng-model="formdata.password">
-            </label>
-            <div class="forgot-wrapper">
-              <a href="#" class="button button-small button-clear button-dark">Forgot Password?</a>
+
+            <div class="small-right-link-wrapper">
+              <a href="#/login" class="button button-small button-clear button-dark">Back to Login</a>
             </div>
 
-            <div class="login-wrapper">
-              <button class="button button-assertive">LOGIN</button>
+            <div class="button-wrapper">
+              <button class="button button-assertive">RESET PASSWORD</button>
             </div>
             <div class="register-wrapper">
               <span>Don't have an account yet? - <a href="#" class="register-link">Register now!</a></span>
             </div>
-
           </form>
         </div>
       </div>
     </div>
-
   </ion-content>
 </ion-view>

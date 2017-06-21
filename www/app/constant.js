@@ -1,8 +1,8 @@
 angular.module('foodapp.constant', [])
 
 .value(
-  'USER_TYPE', {
-    'CUSTOMER': 0,
-    'CHEF': 1
+  'UserType', {
+    'customer': 0,
+    'chef': 1
   }
 );
