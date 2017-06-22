@@ -3,7 +3,7 @@
   width: 100%;
   height: 200px;
 
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   padding: 10px;
 
   background-repeat: no-repeat;
@@ -16,5 +16,84 @@
     font-size: 15px;
     font-weight: 500;
     color: white;
+  }
+}
+
+.cookbook-card-edit {
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+  margin-bottom: 6px;
+  padding: 10px;
+
+  .cookbook-card-blur {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(2px);
+    overflow: hidden;
+
+    .title {
+      position: absolute;
+      bottom: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      color: white;
+    }
+  }
+
+  .glass {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+
+  button.icon {
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: auto 25px;
+
+    padding: 0px;
+    min-width: 36px;
+
+    &:after {
+      content: none;
+    }
+
+    &.activated {
+      opacity: 0.3;
+    }
+  }
+
+  button.icon-up {
+    background-image: url('../img/icon/icon-up@2x.png');
+    top: 10px;
+    right: 45px;
+  }
+
+  button.icon-down {
+    background-image: url('../img/icon/icon-down@2x.png');
+    top: 10px;
+    right: 5px;
+  }
+
+  button.icon-trash {
+    background-image: url('../img/icon/icon-waste@2x.png');
+    bottom: 10px;
+    right: 5px;
   }
 }

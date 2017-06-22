@@ -11,18 +11,23 @@
 
       $scope.recipes = [
         {
+          id: 1,
           title: 'The Very Best Salisbury Steak',
           banner: 'img/sample/recipe-1.png'
         },
         {
+          id: 2,
           title: 'Jolean\'s Cheese Potato & Smoked...',
           banner: 'img/sample/recipe-2.png'
         }
       ];
 
+      $scope.edit = function() {
+        console.log('edit');
+      }
+
       $scope.goDetail = function() {
         console.log('goDetail');
       }
-
     }
 })();

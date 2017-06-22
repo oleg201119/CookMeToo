@@ -1,0 +1,9 @@
+<div class="cookbook-card-edit">
+  <div class="cookbook-card-blur" style="background-image: url({{ recipe.banner }})">
+    <span class="title">{{ recipe.title }}</span>
+  </div>
+  <div class="glass"></div>
+  <button class="button icon icon-up" ng-click="moveUp({recipe: recipe})"></button>
+  <button class="button icon icon-down" ng-click="moveDown({recipe: recipe})"></button>
+  <button class="button icon icon-trash" ng-click="moveTrash({recipe: recipe})"></button>
+</div>

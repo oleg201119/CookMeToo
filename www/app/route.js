@@ -50,8 +50,18 @@ angular.module('foodapp.route', [])
     }
   })
 
+  .state('app.mycookbook-edit', {
+    url: '/mycookbook-edit',
+    views: {
+      'tab-mycookbook': {
+        templateUrl: 'app/components/cookbook/mycookbook-edit.html',
+        controller: 'MyCookBookEditCtrl'
+      }
+    }
+  })
+
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/mycookbook');
+  $urlRouterProvider.otherwise('/app/mycookbook-edit');
 });
