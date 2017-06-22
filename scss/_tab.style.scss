@@ -1,0 +1,49 @@
+.tab-item {
+
+  .icon {
+    background-size: auto 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 6px;
+
+    &.icon-home-off {
+      background-image: url('../img/tab/icon-home-black@2x.png');
+    }
+
+    &.icon-home-on {
+      background-image: url('../img/tab/icon-home-red@2x.png');
+    }
+
+    &.icon-heart-off {
+      background-image: url('../img/tab/icon-wishlist-black@2x.png');
+    }
+
+    &.icon-heart-on {
+      background-image: url('../img/tab/icon-wishlist-red@2x.png');
+    }
+
+    &.icon-chat-off {
+      background-image: url('../img/tab/icon-messages-black@2x.png');
+    }
+
+    &.icon-chat-on {
+      background-image: url('../img/tab/icon-messages-red@2x.png');
+    }
+
+    &.icon-notification-off {
+      background-image: url('../img/tab/icon-notifications-black@2x.png');
+    }
+
+    &.icon-notification-on {
+      background-image: url('../img/tab/icon-notifications-red@2x.png');
+    }
+
+    &.icon-setting-off {
+      background-image: url('../img/tab/icon-avatar-black@2x.png');
+    }
+
+    &.icon-setting-on {
+      background-image: url('../img/tab/icon-avatar-red@2x.png');
+    }
+  }
+}

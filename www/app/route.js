@@ -34,8 +34,24 @@ angular.module('foodapp.route', [])
     controller: 'RegisterCtrl'
   })
 
+  .state('app', {
+    url: '/app',
+    abstract: true,
+    templateUrl: 'app/base/tabs.html'
+  })
+
+  .state('app.mycookbook', {
+    url: '/mycookbook',
+    views: {
+      'tab-mycookbook': {
+        templateUrl: 'app/components/cookbook/mycookbook.html',
+        controller: 'MyCookBookCtrl'
+      }
+    }
+  })
+
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/welcome');
+  $urlRouterProvider.otherwise('/app/mycookbook');
 });

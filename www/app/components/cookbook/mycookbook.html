@@ -1,0 +1,18 @@
+<ion-view class="mycookbook-view">
+  <div class="bar bar-header bar-assertive">
+    <h1 class="title">My CookBook</h1>
+    <button class="button button-clear button-light" ng-click="edit()">EDIT</button>
+  </div>
+
+  <ion-content scroll="true" class="has-header" padding="true">
+
+    <div class="list">
+      <cookbook-card banner="{{recipe.banner}}" title="{{recipe.title}}" ng-click="goDetail()" ng-repeat="recipe in recipes"></cookbook-card>
+
+
+      <!-- <div class="item recipe-card" style="background-image: url({{ myImageUrl }})">
+        <span class="description">Jolean's Cheese Potato &amp; Smoked</span>
+      </div> -->
+    </div>
+  </ion-content>
+</ion-view>

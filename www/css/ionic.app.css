@@ -9826,6 +9826,32 @@ a.button {
 .border-black2 {
   border-color: #505050; }
 
+.tab-item .icon {
+  background-size: auto 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 6px; }
+  .tab-item .icon.icon-home-off {
+    background-image: url("../img/tab/icon-home-black@2x.png"); }
+  .tab-item .icon.icon-home-on {
+    background-image: url("../img/tab/icon-home-red@2x.png"); }
+  .tab-item .icon.icon-heart-off {
+    background-image: url("../img/tab/icon-wishlist-black@2x.png"); }
+  .tab-item .icon.icon-heart-on {
+    background-image: url("../img/tab/icon-wishlist-red@2x.png"); }
+  .tab-item .icon.icon-chat-off {
+    background-image: url("../img/tab/icon-messages-black@2x.png"); }
+  .tab-item .icon.icon-chat-on {
+    background-image: url("../img/tab/icon-messages-red@2x.png"); }
+  .tab-item .icon.icon-notification-off {
+    background-image: url("../img/tab/icon-notifications-black@2x.png"); }
+  .tab-item .icon.icon-notification-on {
+    background-image: url("../img/tab/icon-notifications-red@2x.png"); }
+  .tab-item .icon.icon-setting-off {
+    background-image: url("../img/tab/icon-avatar-black@2x.png"); }
+  .tab-item .icon.icon-setting-on {
+    background-image: url("../img/tab/icon-avatar-red@2x.png"); }
+
 .welcome-view {
   background-image: url("../img/background/bg_welcome@3x.png");
   background-repeat: no-repeat;
@@ -9919,3 +9945,19 @@ a.button {
       color: #007F1C; }
       .auth-view .bottom-content .form .another-wrapper .another-link.activated {
         opacity: 0.3; }
+
+.cookbook-card {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .cookbook-card .title {
+    position: absolute;
+    bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white; }

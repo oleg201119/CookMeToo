@@ -26,6 +26,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // styles
 @import "_common.style";
-@import "_welcome.style";
+@import "_tab.style";
 
+@import "_welcome.style";
 @import "_auth.style";
+@import "_card.style";

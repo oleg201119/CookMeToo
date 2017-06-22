@@ -7,7 +7,8 @@ angular.module('foodapp', [
   'foodapp.route',
 
   'foodapp.welcome',
-  'foodapp.auth'
+  'foodapp.auth',
+  'foodapp.cookbook'
 ])
 
 .run(function($ionicPlatform) {
