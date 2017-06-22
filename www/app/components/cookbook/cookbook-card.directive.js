@@ -4,11 +4,11 @@ angular.module('foodapp.directive')
   return {
     restrict: 'E',
     replace: true,
-    scope: {},
+    scope: {
+      recipe: '=',
+    },
     templateUrl: 'app/components/cookbook/cookbook-card.directive.html',
     link: function(scope, elem, attrs) {      
-      scope.banner = attrs.banner;
-      scope.title = attrs.title;
     }
   };
 });

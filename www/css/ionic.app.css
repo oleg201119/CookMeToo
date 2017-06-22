@@ -10016,3 +10016,20 @@ a.button {
     background-image: url("../img/icon/icon-waste@2x.png");
     bottom: 10px;
     right: 5px; }
+
+.home-card {
+  position: relative;
+  margin: 0px 10px 10px 10px; }
+  .home-card p {
+    padding: 5px 10px; }
+    .home-card p .datetime {
+      float: left; }
+    .home-card p .status {
+      float: right;
+      font-size: 10px;
+      line-height: 10px;
+      padding: 4px 20px;
+      border-radius: 9px;
+      background-color: green; }
+    .home-card p .servings {
+      font-weight: 500; }

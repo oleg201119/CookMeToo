@@ -60,8 +60,18 @@ angular.module('foodapp.route', [])
     }
   })
 
+  .state('app.home', {
+    url: '/home',
+    views: {
+      'tab-home': {
+        templateUrl: 'app/components/home/home.html',
+        controller: 'HomeCtrl'
+      }
+    }
+  })
+
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/mycookbook-edit');
+  $urlRouterProvider.otherwise('/app/home');
 });

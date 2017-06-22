@@ -1,0 +1,12 @@
+<ion-view class="home-view">
+  <div class="bar bar-header bar-assertive">
+    <h1 class="title">Home</h1>
+    <button class="button button-clear button-light" ng-click="add()">ADD RECIPE</button>
+  </div>
+
+  <ion-content scroll="true" class="has-header" padding="true">
+    <div class="list">
+      <home-card recipe="recipe" ng-click="goDetail()" ng-repeat="recipe in recipes"></cookbook-card>
+    </div>
+  </ion-content>
+</ion-view>
