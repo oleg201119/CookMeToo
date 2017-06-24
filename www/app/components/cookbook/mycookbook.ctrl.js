@@ -12,7 +12,7 @@
       $scope.recipes = [
         {
           id: 1,
-          title: 'The Very Best Salisbury Steak',
+          title: 'The Very Best Salisbury Steak test test test test test test',
           banner: 'img/sample/recipe-1.png'
         },
         {
@@ -23,11 +23,11 @@
       ];
 
       $scope.edit = function() {
-        console.log('edit');
+        $state.go('app.mycookbook-edit');
       }
 
-      $scope.goDetail = function() {
-        console.log('goDetail');
+      $scope.detail = function() {
+        
       }
     }
 })();

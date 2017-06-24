@@ -1,0 +1,75 @@
+<ion-view class="order-make-view">
+  <div class="bar bar-header bar-assertive">
+    <h1 class="title">Order</h1>
+    <button class="button button-clear button-light" ng-click="post()">POST</button>
+  </div>
+
+  <ion-content scroll="true" class="has-header" padding="true">
+    <recipe recipe="order.recipe"></recipe>
+
+    <form>
+      <div class="form">
+        <div class="row">
+          <div class="col col-center">
+            <span class="section">Details</span>
+          </div>
+        </div>
+
+        <!-- servings -->
+        <div class="row">
+          <div class="col col-center">
+            <span class="field-label">Servings</span>
+          </div>
+          <div class="col">
+            <label class="item item-input placeholder-right">
+              <input type="text" placeholder="5">
+              <i class="icon icon-spoon placeholder-icon"></i>
+            </label>
+          </div>
+        </div>
+
+        <!-- delivery time -->
+        <div class="row">
+          <div class="col col-center">
+            <span class="field-label">Delivery Time</span>
+          </div>
+          <div class="col">
+            <label class="item item-input placeholder-right">
+              <input type="text" placeholder="20:30">
+              <i class="icon icon-clock placeholder-icon"></i>
+            </label>
+          </div>
+        </div>
+
+        <!-- delivery date -->
+        <div class="row">
+          <div class="col col-center">
+            <span class="field-label">Delivery Date</span>
+          </div>
+          <div class="col">
+            <label class="item item-input placeholder-right">
+              <input type="text" placeholder="03/20/2017">
+              <i class="icon icon-calendar placeholder-icon"></i>
+            </label>
+          </div>
+        </div>
+
+        <!-- comments -->
+        <div class="row">
+          <div class="col">
+            <label class="item item-input">
+              <input type="text" placeholder="Comment">
+            </label>
+          </div>
+        </div>
+
+        <!-- post button -->
+        <div class="row">
+          <div class="col center">
+            <button class="button button-full button-assertive">Post the Recipe</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

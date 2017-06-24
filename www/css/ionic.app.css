@@ -9826,6 +9826,106 @@ a.button {
 .border-black2 {
   border-color: #505050; }
 
+label.item-input.placeholder-right {
+  padding-right: 16px; }
+  label.item-input.placeholder-right input {
+    padding-right: 16px; }
+  label.item-input.placeholder-right .icon {
+    min-width: 18px;
+    width: auto;
+    height: 16px;
+    padding: 0px;
+    background-size: auto 16px;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.icon-up {
+  background-image: url("../img/icon/icon-up@2x.png"); }
+
+.icon-down {
+  background-image: url("../img/icon/icon-down@2x.png"); }
+
+.icon-trash {
+  background-image: url("../img/icon/icon-waste@2x.png"); }
+
+.icon-add {
+  background-image: url("../img/icon/icon-add@2x.png"); }
+
+.icon-apple {
+  background-image: url("../img/icon/icon-apple@2x.png"); }
+
+.icon-block {
+  background-image: url("../img/icon/icon-block@2x.png"); }
+
+.icon-calendar {
+  background-image: url("../img/icon/icon-calendar@2x.png"); }
+
+.icon-chat {
+  background-image: url("../img/icon/icon-chat@2x.png"); }
+
+.icon-check {
+  background-image: url("../img/icon/icon-check@2x.png"); }
+
+.icon-clock {
+  background-image: url("../img/icon/icon-clock@2x.png"); }
+
+.icon-cookhat {
+  background-image: url("../img/icon/icon-cookhat@2x.png"); }
+
+.icon-deactive {
+  background-image: url("../img/icon/icon-detactive@2x.png"); }
+
+.icon-dish {
+  background-image: url("../img/icon/icon-dish@2x.png"); }
+
+.icon-down {
+  background-image: url("../img/icon/icon-down@2x.png"); }
+
+.icon-filter {
+  background-image: url("../img/icon/icon-filter@2x.png"); }
+
+.icon-flag {
+  background-image: url("../img/icon/icon-flag@2x.png"); }
+
+.icon-food {
+  background-image: url("../img/icon/icon-food@2x.png"); }
+
+.icon-lock {
+  background-image: url("../img/icon/icon-lock@2x.png"); }
+
+.icon-settings {
+  background-image: url("../img/icon/icon-settings@2x.png"); }
+
+.icon-share {
+  background-image: url("../img/icon/icon-share@2x.png"); }
+
+.icon-spoon {
+  background-image: url("../img/icon/icon-spoon@2x.png"); }
+
+.icon-star {
+  background-image: url("../img/icon/icon-star@2x.png"); }
+
+.icon-trophy {
+  background-image: url("../img/icon/icon-trophy@2x.png"); }
+
+.icon-up {
+  background-image: url("../img/icon/icon-up@2x.png"); }
+
+.icon-verified {
+  background-image: url("../img/icon/icon-verified@2x.png"); }
+
+.icon-waste {
+  background-image: url("../img/icon/icon-waste@2x.png"); }
+
+.left {
+  text-align: left; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
 .tab-item .icon {
   background-size: auto 21px;
   background-repeat: no-repeat;
@@ -9946,90 +10046,103 @@ a.button {
       .auth-view .bottom-content .form .another-wrapper .another-link.activated {
         opacity: 0.3; }
 
-.cookbook-card {
+.recipe {
   position: relative;
   width: 100%;
   height: 200px;
-  margin-bottom: 6px;
-  padding: 10px;
+  /*
+  // The background image will be setted by directive
+  background-image: url('');
+  */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  .cookbook-card .title {
+  .recipe .title {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
     font-size: 15px;
     font-weight: 500;
-    color: white; }
-
-.cookbook-card-edit {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  margin-bottom: 6px;
-  padding: 10px; }
-  .cookbook-card-edit .cookbook-card-blur {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .recipe.blur {
     filter: blur(2px);
     overflow: hidden; }
-    .cookbook-card-edit .cookbook-card-blur .title {
-      position: absolute;
-      bottom: 10px;
-      font-size: 15px;
-      font-weight: 500;
-      color: white; }
-  .cookbook-card-edit .glass {
+
+.card-shadow, .cookbook-card, .order-card {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #fff; }
+
+.cookbook-card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px; }
+  .cookbook-card.edit .glass {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 200px;
     background-color: rgba(100, 100, 100, 0.5); }
-  .cookbook-card-edit button.icon {
+  .cookbook-card.edit button.icon {
     position: absolute;
+    /*
+      // The background image will be setted in _common.style.scss
+      background-image: url('');
+      */
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
     background-size: auto 25px;
     padding: 0px;
     min-width: 36px; }
-    .cookbook-card-edit button.icon:after {
+    .cookbook-card.edit button.icon:after {
       content: none; }
-    .cookbook-card-edit button.icon.activated {
+    .cookbook-card.edit button.icon.activated {
       opacity: 0.3; }
-  .cookbook-card-edit button.icon-up {
-    background-image: url("../img/icon/icon-up@2x.png");
+  .cookbook-card.edit button.icon-up {
     top: 10px;
     right: 45px; }
-  .cookbook-card-edit button.icon-down {
-    background-image: url("../img/icon/icon-down@2x.png");
+  .cookbook-card.edit button.icon-down {
     top: 10px;
     right: 5px; }
-  .cookbook-card-edit button.icon-trash {
-    background-image: url("../img/icon/icon-waste@2x.png");
+  .cookbook-card.edit button.icon-trash {
     bottom: 10px;
     right: 5px; }
 
-.home-card {
+.order-card {
   position: relative;
-  margin: 0px 10px 10px 10px; }
-  .home-card p {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px; }
+  .order-card p {
     padding: 5px 10px; }
-    .home-card p .datetime {
+    .order-card p .datetime {
       float: left; }
-    .home-card p .status {
+    .order-card p .status {
       float: right;
       font-size: 10px;
       line-height: 10px;
       padding: 4px 20px;
       border-radius: 9px;
       background-color: green; }
-    .home-card p .servings {
+    .order-card p .servings {
       font-weight: 500; }
+
+.form {
+  padding: 10px; }
+  .form .row {
+    margin-bottom: 10px; }
+  .form span.section {
+    font-size: 16px;
+    font-weight: 500; }
+  .form span.field-label {
+    font-size: 14px;
+    font-weight: 400; }

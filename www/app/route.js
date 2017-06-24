@@ -70,8 +70,58 @@ angular.module('foodapp.route', [])
     }
   })
 
+  .state('app.recipe-detail', {
+    url: '/recipe-detail',
+    views: {
+      'tab-home': {
+        templateUrl: 'app/components/home/recipe-detail.html',
+        controller: 'RecipeDetailCtrl'
+      }
+    }
+  })
+
+  .state('app.offer-detail', {
+    url: '/offer-detail',
+    views: {
+      'tab-home': {
+        templateUrl: 'app/components/home/offer-detail.html',
+        controller: 'OfferDetailCtrl'
+      }
+    }
+  })
+
+  .state('app.offer-make', {
+    url: '/offer-make',
+    views: {
+      'tab-home': {
+        templateUrl: 'app/components/home/offer-make.html',
+        controller: 'OfferMakeCtrl'
+      }
+    }
+  })
+
+  .state('app.order-make', {
+    url: '/order-make',
+    views: {
+      'tab-home': {
+        templateUrl: 'app/components/home/order-make.html',
+        controller: 'OrderMakeCtrl'
+      }
+    }
+  })
+
+  .state('app.order-detail', {
+    url: '/order-detail',
+    views: {
+      'tab-home': {
+        templateUrl: 'app/components/home/order-detail.html',
+        controller: 'OrderDetailCtrl'
+      }
+    }
+  })
+
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/home');
+  $urlRouterProvider.otherwise('/app/order-detail');
 });

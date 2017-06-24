@@ -1,0 +1,35 @@
+// recipe
+.recipe {
+  position: relative;
+  width: $recipe-width;
+  height: $recipe-height;
+
+  /*
+  // The background image will be setted by directive
+  background-image: url('');
+  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .title {
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+    padding: 15px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &.blur {
+    filter: blur(2px);
+    overflow: hidden;
+  }
+}

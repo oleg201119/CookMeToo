@@ -1,13 +1,13 @@
 angular.module('foodapp.directive')
 
-.directive('homeCard', function() {
+.directive('orderCard', function() {
   return {
     restrict: 'E',
     replace: true,
     scope: {
-      recipe: '='
+      order: '='
     },
-    templateUrl: 'app/components/home/home-card.directive.html',
+    templateUrl: 'app/components/home/order-card.directive.html',
     link: function(scope, elem, attrs) {
     }
   };

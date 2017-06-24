@@ -12,3 +12,143 @@
 .border-black2 {
   border-color: $black-2-color;
 }
+
+label.item-input {
+  &.placeholder-right {
+    padding-right: 16px;
+
+    input {
+      padding-right: 16px;
+    }
+
+    .icon {
+      min-width: 18px;
+      width: auto;
+      height: 16px;
+
+      padding: 0px;
+
+      background-size: auto 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// icon image
+.icon-up {
+  background-image: url('../img/icon/icon-up@2x.png');
+}
+
+.icon-down {
+  background-image: url('../img/icon/icon-down@2x.png');
+}
+
+.icon-trash {
+  background-image: url('../img/icon/icon-waste@2x.png');
+}
+
+.icon-add {
+  background-image: url('../img/icon/icon-add@2x.png');
+}
+
+.icon-apple {
+  background-image: url('../img/icon/icon-apple@2x.png');
+}
+
+.icon-block {
+  background-image: url('../img/icon/icon-block@2x.png');
+}
+
+.icon-calendar {
+  background-image: url('../img/icon/icon-calendar@2x.png');
+}
+
+.icon-chat {
+  background-image: url('../img/icon/icon-chat@2x.png');
+}
+
+.icon-check {
+  background-image: url('../img/icon/icon-check@2x.png');
+}
+
+.icon-clock {
+  background-image: url('../img/icon/icon-clock@2x.png');
+}
+
+.icon-cookhat {
+  background-image: url('../img/icon/icon-cookhat@2x.png');
+}
+
+.icon-deactive {
+  background-image: url('../img/icon/icon-detactive@2x.png');
+}
+
+.icon-dish {
+  background-image: url('../img/icon/icon-dish@2x.png');
+}
+
+.icon-down {
+  background-image: url('../img/icon/icon-down@2x.png');
+}
+
+.icon-filter {
+  background-image: url('../img/icon/icon-filter@2x.png');
+}
+
+.icon-flag {
+  background-image: url('../img/icon/icon-flag@2x.png');
+}
+
+.icon-food {
+  background-image: url('../img/icon/icon-food@2x.png');
+}
+
+.icon-lock {
+  background-image: url('../img/icon/icon-lock@2x.png');
+}
+
+.icon-settings {
+  background-image: url('../img/icon/icon-settings@2x.png');
+}
+
+.icon-share {
+  background-image: url('../img/icon/icon-share@2x.png');
+}
+
+.icon-spoon {
+  background-image: url('../img/icon/icon-spoon@2x.png');
+}
+
+.icon-star {
+  background-image: url('../img/icon/icon-star@2x.png');
+}
+
+.icon-trophy {
+  background-image: url('../img/icon/icon-trophy@2x.png');
+}
+
+.icon-up {
+  background-image: url('../img/icon/icon-up@2x.png');
+}
+
+.icon-verified {
+  background-image: url('../img/icon/icon-verified@2x.png');
+}
+
+.icon-waste {
+  background-image: url('../img/icon/icon-waste@2x.png');
+}
+
+// align
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}

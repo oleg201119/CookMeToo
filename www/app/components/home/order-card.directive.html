@@ -1,0 +1,14 @@
+<div class="order-card">
+  <div class="recipe" style="background-image: url({{ order.recipe.banner }})">
+    <span class="title">{{ order.recipe.title }}</span>
+  </div>
+  <div class="delivery">
+    <p>
+      <span class="datetime">{{ order.delivery.time }}, {{ order.delivery.date }}</span>
+      <span class="status">{{ order.delivery.status }}</span>
+    </p>
+    <p>
+      <span class="servings">{{ order.delivery.servings }} Serving{{ order.delivery.servings>1?'s':'' }}</span>
+    </p>
+  </div>
+</div>

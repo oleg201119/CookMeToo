@@ -9,11 +9,13 @@
 
     function HomeCtrl($rootScope, $scope, $state, $ionicLoading) {
 
-      $scope.recipes = [
+      $scope.orders = [
         {
-          id: 1,
-          title: 'The Very Best Salisbury Steak',
-          banner: 'img/sample/recipe-1.png',
+          recipe: {
+            id: 1,
+            title: 'The Very Best Salisbury Steak',
+            banner: 'img/sample/recipe-1.png'
+          },
           delivery: {
             date: '03/20/2017',
             time: '20:30',
@@ -22,9 +24,11 @@
           }
         },
         {
-          id: 2,
-          title: 'Jolean\'s Cheese Potato & Smoked...',
-          banner: 'img/sample/recipe-2.png',
+          recipe: {
+            id: 2,
+            title: 'Jolean\'s Cheese Potato & Smoked...',
+            banner: 'img/sample/recipe-2.png'
+          },
           delivery: {
             date: '03/20/2017',
             time: '20:30',
@@ -34,12 +38,8 @@
         }
       ];
 
-      $scope.edit = function() {
-        console.log('edit');
-      }
-
-      $scope.goDetail = function() {
-        console.log('goDetail');
+      $scope.detail = function() {
+        
       }
     }
 })();
