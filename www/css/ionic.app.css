@@ -9893,6 +9893,9 @@ label.item-input.placeholder-right {
 .icon-lock {
   background-image: url("../img/icon/icon-lock@2x.png"); }
 
+.icon-pin {
+  background-image: url("../img/icon/icon-pin@2x.png"); }
+
 .icon-settings {
   background-image: url("../img/icon/icon-settings@2x.png"); }
 
@@ -9925,6 +9928,21 @@ label.item-input.placeholder-right {
 
 .right {
   text-align: right; }
+
+.button-left {
+  float: left; }
+
+.button-right {
+  float: right; }
+
+.singleline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.border {
+  margin-top: -1px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
 
 .tab-item .icon {
   background-size: auto 21px;
@@ -10046,7 +10064,13 @@ label.item-input.placeholder-right {
       .auth-view .bottom-content .form .another-wrapper .another-link.activated {
         opacity: 0.3; }
 
-.recipe {
+.recipe-title {
+  color: #CC0017;
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 10px; }
+
+.recipe-banner {
   position: relative;
   width: 100%;
   height: 200px;
@@ -10057,7 +10081,7 @@ label.item-input.placeholder-right {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  .recipe .title {
+  .recipe-banner .banner-title {
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -10068,9 +10092,44 @@ label.item-input.placeholder-right {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  .recipe.blur {
+  .recipe-banner.blur {
     filter: blur(2px);
     overflow: hidden; }
+
+.delivery {
+  font-size: 15px;
+  line-height: 15px; }
+  .delivery .icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: auto 16px;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .delivery .time-serving {
+    position: relative;
+    padding: 20px 10px 20px 36px; }
+    .delivery .time-serving .icon {
+      position: absolute;
+      top: 20px;
+      left: 10px; }
+    .delivery .time-serving .serving {
+      float: right; }
+  .delivery .address {
+    position: relative;
+    padding: 20px 10px 20px 36px;
+    clear: both; }
+    .delivery .address .icon {
+      position: absolute;
+      top: 20px;
+      left: 10px; }
+
+.price {
+  padding: 20px 20px 20px 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #00CC2D; }
 
 .card-shadow, .cookbook-card, .order-card {
   padding-top: 1px;
@@ -10146,3 +10205,32 @@ label.item-input.placeholder-right {
   .form span.field-label {
     font-size: 14px;
     font-weight: 400; }
+
+.chef-thumb {
+  position: relative;
+  padding: 10px 90px 10px 60px;
+  min-height: 64px;
+  line-height: 44px; }
+  .chef-thumb .avatar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #00CC2D; }
+  .chef-thumb .name {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    display: inline-block;
+    vertical-align: middle; }
+  .chef-thumb .rate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFBE19;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44px; }

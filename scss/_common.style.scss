@@ -108,6 +108,10 @@ label.item-input {
   background-image: url('../img/icon/icon-lock@2x.png');
 }
 
+.icon-pin {
+  background-image: url('../img/icon/icon-pin@2x.png');
+}
+
 .icon-settings {
   background-image: url('../img/icon/icon-settings@2x.png');
 }
@@ -151,4 +155,25 @@ label.item-input {
 
 .right {
   text-align: right;
+}
+
+.button-left {
+  float: left;
+}
+
+.button-right {
+  float: right;
+}
+
+// single line
+.singleline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// border
+.border {
+  margin-top: -1px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }

@@ -3,11 +3,11 @@
 
     angular
     .module('foodapp.home')
-    .controller('OrderMakeCtrl', OrderMakeCtrl);
+    .controller('OrderDetailCtrl', OrderDetailCtrl);
 
-    OrderMakeCtrl.$inject = ['$rootScope', '$scope', '$state', '$ionicLoading'];
+    OrderDetailCtrl.$inject = ['$rootScope', '$scope', '$state', '$ionicLoading'];
 
-    function OrderMakeCtrl($rootScope, $scope, $state, $ionicLoading) {
+    function OrderDetailCtrl($rootScope, $scope, $state, $ionicLoading) {
 
       $scope.order = {
         recipe: {

@@ -9,7 +9,8 @@ angular.module('foodapp', [
   'foodapp.welcome',
   'foodapp.auth',
   'foodapp.cookbook',
-  'foodapp.home'
+  'foodapp.home',
+  'foodapp.profile'
 ])
 
 .run(function($ionicPlatform) {

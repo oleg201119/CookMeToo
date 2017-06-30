@@ -1,14 +1,16 @@
 angular.module('foodapp.directive')
 
-.directive('recipe', function() {
+.directive('chefThumb', function() {
   return {
     restrict: 'E',
     replace: true,
     scope: {
-      recipe: '=',
+      chef: '=',
     },
-    templateUrl: 'app/components/recipe/recipe.directive.html',
+    templateUrl: 'app/components/chef/chef-thumb.directive.html',
     link: function(scope, elem, attrs) {
+
+      scope.stars = [1, 1, 0, 0, 0];
     }
   };
 });

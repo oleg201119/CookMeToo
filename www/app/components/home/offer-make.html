@@ -1,10 +1,56 @@
-<ion-view class="recipe-detail-view">
+<ion-view class="offer-make-view">
   <div class="bar bar-header bar-assertive">
     <h1 class="title">New Offer</h1>
-    <button class="button button-clear button-light">SAVE</button>
   </div>
 
   <ion-content scroll="true" class="has-header" padding="true">
+    <div class="recipe-title">{{offer.recipe.title}}</div>
+    <recipe-banner recipe="offer.recipe"></recipe-banner>
+
+    <div class="delivery">
+      <!-- time & servings -->
+      <div class="time-serving border">
+        <span class="time">
+          <i class="icon icon-clock"></i>
+          <span>{{offer.delivery.time}}, {{offer.delivery.date}}</span>
+        </span>
+        <span class="serving">
+          {{ offer.delivery.servings }} Serving{{ offer.delivery.servings>1?'s':'' }}
+        </span>
+      </div>
+
+      <!-- address -->
+      <div class="address border">
+        <i class="icon icon-pin"></i>
+        <span>{{offer.delivery.address}}</span>
+      </div>
+    </div>
+
+    <div class="form border">
+      <!-- price -->
+      <label class="item item-input">
+        <input type="text" placeholder="Price" ng-model="offer.price">
+      </label>
+    </div>
+
+    <!-- chef & comment -->
+    <div class="border">
+      <chef-thumb chef="offer.chef"></chef-thumb>
+      <div class="form">
+        <label class="item item-input">
+          <textarea style="height: 100px">Message</textarea>
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="button button-full button-assertive">Cancel</button>
+        </div>
+        <div class="col">
+          <button class="button button-full button-balanced">Send</button>
+        </div>
+      </div>
+    </div>
 
   </ion-content>
 </ion-view>

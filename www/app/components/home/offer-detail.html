@@ -4,7 +4,45 @@
   </div>
 
   <ion-content scroll="true" class="has-header" padding="true">
-    <div class="card">
+    <div class="recipe-title">{{offer.recipe.title}}</div>
+    <recipe-banner recipe="offer.recipe"></recipe-banner>
+
+    <div class="delivery">
+      <!-- time & servings -->
+      <div class="time-serving border">
+        <span class="time">
+          <i class="icon icon-clock"></i>
+          <span>{{offer.delivery.time}}, {{offer.delivery.date}}</span>
+        </span>
+        <span class="serving">
+          {{ offer.delivery.servings }} Serving{{ offer.delivery.servings>1?'s':'' }}
+        </span>
+      </div>
+
+      <!-- address -->
+      <div class="address border">
+        <i class="icon icon-pin"></i>
+        <span>{{offer.delivery.address}}</span>
+      </div>
     </div>
+
+    <!-- price -->
+    <div class="price border">
+      {{offer.price}}
+    </div>
+
+    <!-- chef & buttons -->
+    <div class="border">
+      <chef-thumb chef="offer.chef"></chef-thumb>
+      <div class="row">
+        <div class="col">
+          <button class="button button-full button-assertive">Decline</button>
+        </div>
+        <div class="col">
+          <button class="button button-full button-balanced">Accept</button>
+        </div>
+      </div>
+    </div>
+
   </ion-content>
 </ion-view>

@@ -1,0 +1,7 @@
+<div class="chef-thumb">
+  <img class="avatar" ng-src="{{chef.avatar}}">
+  <span class="name">{{chef.name}}</span>
+  <span class="rate">
+    <i class="icon ion-ios-star" ng-class="{'ion-ios-star': star==1, 'ion-ios-star-outline': star==0}" ng-repeat="star in stars track by $index"></i>
+  </span>
+</div>
