@@ -1,0 +1,86 @@
+.panel {
+  width: 100%;
+  background-color: white;
+
+  margin: 5px 0px;
+  padding: 15px;
+
+  span {
+    &.title {
+      font-size: 16px;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &.tag {
+      font-style: italic;
+      color: $green-3-color;
+    }
+
+    &.rating-date {
+      display: block;
+      padding: 10px 0px 10px 10px;
+    }
+
+    &.rating-content {
+      display: block;
+      padding: 10px 0px 10px 10px;
+    }
+  }
+
+  div.preference, div.tag {
+    display: block;
+    width: 50%;
+    margin-bottom: 5px;
+    float: left;
+  }
+
+  .toggle {
+    display: block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid #CCCCCC;
+    border-radius: 22px;
+
+    &.selected {
+      border: 2px solid $red-1-color;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    padding: 0px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.icon-trophy {
+      min-width: 20px;
+      width: auto;
+      height: 24px;
+
+      vertical-align: middle;
+      background-size: auto 24px;
+    }
+
+    &.icon-pin {
+      min-width: 11px;
+      width: auto;
+      height: 16px;
+
+      vertical-align: middle;
+      background-size: auto 16px;
+    }
+
+    &.icon-flag {
+      min-width: 32px;
+      width: auto;
+      height: 21px;
+
+      vertical-align: middle;
+      background-size: auto 21px;
+    }
+  }
+
+}

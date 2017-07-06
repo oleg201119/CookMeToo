@@ -35,6 +35,11 @@ label.item-input {
   }
 }
 
+// rating control
+.ionic_ratings .icon {
+  font-size: 40px;
+}
+
 // icon image
 .icon-up {
   background-image: url('../img/icon/icon-up@2x.png');
@@ -81,7 +86,7 @@ label.item-input {
 }
 
 .icon-deactive {
-  background-image: url('../img/icon/icon-detactive@2x.png');
+  background-image: url('../img/icon/icon-deactive@2x.png');
 }
 
 .icon-dish {

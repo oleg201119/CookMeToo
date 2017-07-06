@@ -9839,6 +9839,9 @@ label.item-input.placeholder-right {
     background-position: center;
     background-repeat: no-repeat; }
 
+.ionic_ratings .icon {
+  font-size: 40px; }
+
 .icon-up {
   background-image: url("../img/icon/icon-up@2x.png"); }
 
@@ -9873,7 +9876,7 @@ label.item-input.placeholder-right {
   background-image: url("../img/icon/icon-cookhat@2x.png"); }
 
 .icon-deactive {
-  background-image: url("../img/icon/icon-detactive@2x.png"); }
+  background-image: url("../img/icon/icon-deactive@2x.png"); }
 
 .icon-dish {
   background-image: url("../img/icon/icon-dish@2x.png"); }
@@ -10099,7 +10102,10 @@ label.item-input.placeholder-right {
 .delivery {
   font-size: 15px;
   line-height: 15px; }
-  .delivery .icon {
+  .delivery .icon-custom {
+    position: absolute;
+    top: 20px;
+    left: 10px;
     width: 16px;
     height: 16px;
     display: inline-block;
@@ -10110,20 +10116,12 @@ label.item-input.placeholder-right {
   .delivery .time-serving {
     position: relative;
     padding: 20px 10px 20px 36px; }
-    .delivery .time-serving .icon {
-      position: absolute;
-      top: 20px;
-      left: 10px; }
     .delivery .time-serving .serving {
       float: right; }
   .delivery .address {
     position: relative;
     padding: 20px 10px 20px 36px;
     clear: both; }
-    .delivery .address .icon {
-      position: absolute;
-      top: 20px;
-      left: 10px; }
 
 .price {
   padding: 20px 20px 20px 40px;
@@ -10234,3 +10232,102 @@ label.item-input.placeholder-right {
     font-size: 16px;
     font-weight: 400;
     line-height: 44px; }
+
+.profile-banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  /*
+  // The background image will be setted by directive
+  background-image: url('');
+  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .profile-banner .profile-avatar {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white; }
+  .profile-banner .profile-name {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.panel {
+  width: 100%;
+  background-color: white;
+  margin: 5px 0px;
+  padding: 15px; }
+  .panel span.title {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px; }
+  .panel span.tag {
+    font-style: italic;
+    color: #007F1C; }
+  .panel span.rating-date {
+    display: block;
+    padding: 10px 0px 10px 10px; }
+  .panel span.rating-content {
+    display: block;
+    padding: 10px 0px 10px 10px; }
+  .panel div.preference, .panel div.tag {
+    display: block;
+    width: 50%;
+    margin-bottom: 5px;
+    float: left; }
+  .panel .toggle {
+    display: block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid #CCCCCC;
+    border-radius: 22px; }
+    .panel .toggle.selected {
+      border: 2px solid #CC0017; }
+  .panel .icon {
+    display: inline-block;
+    padding: 0px;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .panel .icon.icon-trophy {
+      min-width: 20px;
+      width: auto;
+      height: 24px;
+      vertical-align: middle;
+      background-size: auto 24px; }
+    .panel .icon.icon-pin {
+      min-width: 11px;
+      width: auto;
+      height: 16px;
+      vertical-align: middle;
+      background-size: auto 16px; }
+    .panel .icon.icon-flag {
+      min-width: 32px;
+      width: auto;
+      height: 21px;
+      vertical-align: middle;
+      background-size: auto 21px; }
+
+.settings-view .icon-custom {
+  display: inline-block;
+  min-width: 29px;
+  width: auto;
+  height: 29px;
+  vertical-align: middle;
+  background-size: auto 29px;
+  background-position: center;
+  background-repeat: no-repeat; }

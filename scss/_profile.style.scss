@@ -1,0 +1,45 @@
+// recipe banner
+.profile-banner {
+  position: relative;
+  width: $profile-width;
+  height: $profile-height;
+
+  /*
+  // The background image will be setted by directive
+  background-image: url('');
+  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .profile-avatar {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -50px;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .profile-name {
+    position: absolute;
+    bottom: 30px;
+
+    width: 100%;
+    padding: 10px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+    text-align: center;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+}

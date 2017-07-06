@@ -18,6 +18,7 @@ $dark:                            #444 !default;
 // variables
 @import "_common.variable";
 @import "_recipe.variable";
+@import "_profile.variable";
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -39,3 +40,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "_offer.style";
 
 @import "_chef.style";
+
+@import "_profile.style";
+@import "_panel.style";
+@import "_settings.style";

@@ -120,8 +120,58 @@ angular.module('foodapp.route', [])
     }
   })
 
+  .state('app.profile', {
+    url: '/profile',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/profile.html',
+        controller: 'ProfileCtrl'
+      }
+    }
+  })
+
+  .state('app.profile-edit', {
+    url: '/profile-edit',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/profile-edit.html',
+        controller: 'ProfileEditCtrl'
+      }
+    }
+  })
+
+  .state('app.settings', {
+    url: '/settings',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/settings.html',
+        controller: 'SettingsCtrl'
+      }
+    }
+  })
+
+  .state('app.password-change', {
+    url: '/password-change',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/password-change.html',
+        controller: 'PasswordChangeCtrl'
+      }
+    }
+  })
+
+  .state('app.review-leave', {
+    url: '/review-leave',
+    views: {
+      'tab-notifications': {
+        templateUrl: 'app/components/notification/review-leave.html',
+        controller: 'ReviewLeaveCtrl'
+      }
+    }
+  })
+
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/offer-make');
+  $urlRouterProvider.otherwise('/app/password-change');
 });

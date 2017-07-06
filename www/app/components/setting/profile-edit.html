@@ -1,0 +1,87 @@
+<ion-view class="profile-edit-view">
+  <div class="bar bar-header bar-assertive">
+    <h1 class="title">Profile</h1>
+    <button class="button button-clear button-light" ng-click="save()">SAVE</button>
+  </div>
+
+  <ion-content scroll="true" class="has-header" padding="false" style="background-color: #f5f5f5;">
+    <profile-banner profile="profile"></profile-banner>
+
+    <div class="panel text-center">
+      <i class="icon icon-trophy"></i>
+      <span>
+        Health Heart Artist
+      </span>
+    </div>
+
+    <!-- Address -->
+    <div class="panel text-left">
+      <label class="item item-input">
+        <input type="text" placeholder="Address">
+      </label>
+    </div>
+
+    <!-- Diets -->
+    <div class="panel text-left">
+      <span class="title">Diets</span>
+
+      <div class="tag">
+        <div class="toggle selected">Low Carb</div>
+      </div>
+
+      <div class="tag">
+        <div class="toggle">High Protein</div>
+      </div>
+
+      <div class="tag">
+        <div class="toggle">Low Sodium</div>
+      </div>
+
+      <div style="clear: both"></div>
+    </div>
+
+    <!-- Cuisine Preferences -->
+    <div class="panel text-left">
+      <span class="title">Cuisine Preferences</span>
+
+      <div class="preference">
+        <div class="toggle selected">
+          <i class="icon icon-flag"></i>
+          <span class="country">Chinese</span>
+        </div>
+      </div>
+
+      <div class="preference">
+        <div class="toggle">
+          <i class="icon icon-flag"></i>
+          <span class="country">American</span>
+        </div>
+      </div>
+
+      <div class="preference">
+        <div class="toggle selected">
+          <i class="icon icon-flag"></i>
+          <span class="country">French</span>
+        </div>
+      </div>
+
+      <div class="preference">
+        <div class="toggle">
+          <i class="icon icon-flag"></i>
+          <span class="country">Italian</span>
+        </div>
+      </div>
+
+      <div class="preference">
+        <div class="toggle">
+          <i class="icon icon-flag"></i>
+          <span class="country">Greek</span>
+        </div>
+      </div>
+
+      <div style="clear: both"></div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

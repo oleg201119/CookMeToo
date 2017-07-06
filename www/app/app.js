@@ -10,7 +10,10 @@ angular.module('foodapp', [
   'foodapp.auth',
   'foodapp.cookbook',
   'foodapp.home',
-  'foodapp.profile'
+  'foodapp.setting',
+  'foodapp.notification',
+
+  'ionic-ratings'
 ])
 
 .run(function($ionicPlatform) {
