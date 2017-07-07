@@ -160,6 +160,36 @@ angular.module('foodapp.route', [])
     }
   })
 
+  .state('app.cuisine-change', {
+    url: '/cuisine-change',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/cuisine-change.html',
+        controller: 'CuisineChangeCtrl'
+      }
+    }
+  })
+
+  .state('app.diet-change', {
+    url: '/diet-change',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/diet-change.html',
+        controller: 'DietChangeCtrl'
+      }
+    }
+  })
+
+  .state('app.payments', {
+    url: '/payments',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/payments.html',
+        controller: 'PaymentsCtrl'
+      }
+    }
+  })
+
   .state('app.review-leave', {
     url: '/review-leave',
     views: {
@@ -173,5 +203,5 @@ angular.module('foodapp.route', [])
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/password-change');
+  $urlRouterProvider.otherwise('/app/payments');
 });

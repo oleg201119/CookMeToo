@@ -10271,11 +10271,6 @@ label.item-input.placeholder-right {
   background-color: white;
   margin: 5px 0px;
   padding: 15px; }
-  .panel span.title {
-    font-size: 16px;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 10px; }
   .panel span.tag {
     font-style: italic;
     color: #007F1C; }
@@ -10285,19 +10280,6 @@ label.item-input.placeholder-right {
   .panel span.rating-content {
     display: block;
     padding: 10px 0px 10px 10px; }
-  .panel div.preference, .panel div.tag {
-    display: block;
-    width: 50%;
-    margin-bottom: 5px;
-    float: left; }
-  .panel .toggle {
-    display: block;
-    margin: 5px;
-    padding: 10px 20px;
-    border: 2px solid #CCCCCC;
-    border-radius: 22px; }
-    .panel .toggle.selected {
-      border: 2px solid #CC0017; }
   .panel .icon {
     display: inline-block;
     padding: 0px;
@@ -10316,6 +10298,37 @@ label.item-input.placeholder-right {
       vertical-align: middle;
       background-size: auto 16px; }
     .panel .icon.icon-flag {
+      min-width: 32px;
+      width: auto;
+      height: 21px;
+      vertical-align: middle;
+      background-size: auto 21px; }
+
+span.title {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px; }
+
+div.preference, div.tag {
+  display: block;
+  width: 50%;
+  margin-bottom: 5px;
+  float: left; }
+  div.preference .toggle, div.tag .toggle {
+    display: block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid #CCCCCC;
+    border-radius: 22px; }
+    div.preference .toggle.selected, div.tag .toggle.selected {
+      border: 2px solid #CC0017; }
+  div.preference .icon, div.tag .icon {
+    display: inline-block;
+    padding: 0px;
+    background-position: center;
+    background-repeat: no-repeat; }
+    div.preference .icon.icon-flag, div.tag .icon.icon-flag {
       min-width: 32px;
       width: auto;
       height: 21px;
