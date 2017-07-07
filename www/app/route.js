@@ -190,6 +190,16 @@ angular.module('foodapp.route', [])
     }
   })
 
+  .state('app.support', {
+    url: '/support',
+    views: {
+      'tab-setting': {
+        templateUrl: 'app/components/setting/support.html',
+        controller: 'SupportCtrl'
+      }
+    }
+  })
+
   .state('app.review-leave', {
     url: '/review-leave',
     views: {
@@ -203,5 +213,5 @@ angular.module('foodapp.route', [])
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/payments');
+  $urlRouterProvider.otherwise('/app/support');
 });
