@@ -13,6 +13,8 @@ angular.module('foodapp', [
   'foodapp.setting',
   'foodapp.notification',
 
+  'foodapp.services',
+
   'ionic-ratings'
 ])
 
