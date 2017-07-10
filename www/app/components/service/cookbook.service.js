@@ -11,6 +11,7 @@
 
       var service = {};
 
+      // add
       service.add = function(title, banner, link) {
         var deferred = $q.defer();
 
@@ -43,6 +44,7 @@
         return deferred.promise;
       }
 
+      // get list
       service.get_list = function() {
         var deferred = $q.defer();
 
@@ -68,6 +70,7 @@
         return deferred.promise;
       }
 
+      // change sort order
       service.change_order = function(cookbook) {
         var deferred = $q.defer();
 

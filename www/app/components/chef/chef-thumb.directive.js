@@ -10,7 +10,7 @@ angular.module('foodapp.directive')
     templateUrl: 'app/components/chef/chef-thumb.directive.html',
     link: function(scope, elem, attrs) {
 
-      scope.stars = [1, 1, 0, 0, 0];
+      scope.stars = [1, 1, 1, 0, 0];
     }
   };
 });

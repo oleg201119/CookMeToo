@@ -5,9 +5,9 @@
     .module('foodapp.cookbook')
     .controller('MyCookBookCtrl', MyCookBookCtrl);
 
-    MyCookBookCtrl.$inject = ['$rootScope', '$scope', '$state', '$ionicLoading'];
+    MyCookBookCtrl.$inject = ['$rootScope', '$scope', '$state', '$ionicLoading', 'Cookbook'];
 
-    function MyCookBookCtrl($rootScope, $scope, $state, $ionicLoading) {
+    function MyCookBookCtrl($rootScope, $scope, $state, $ionicLoading, Cookbook) {
 
       $scope.recipes = [
         {
@@ -27,7 +27,27 @@
       }
 
       $scope.detail = function() {
-        
+
       }
+
+      $scope.get_cookbook = function() {
+        $ionicLoading.show();
+
+        Cookbook.get_list().then(
+          function(data) {
+            $ionicLoading.hide();
+          },
+          function(error) {
+            $ionicLoading.hide();
+          }
+        );
+      }
+
+      $scope.init = function() {
+        $scope.get_cookbook();
+      }
+
+      // Init
+      $scope.init();
     }
 })();
